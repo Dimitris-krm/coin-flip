@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+        android:layout_toStartOf="@id/group"
+        android:text="Guess the result : "
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <RadioGroup
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/lucktails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tails">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/luckheads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heads">
+
+        </RadioButton>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@id/result"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"
+        android:text="The coin landed on :\n">
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/euro">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/flip"
+        android:background="@drawable/buttonshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:textAllCaps="false"
+        android:text="Flip the coin" />
+
+    <TextView
+        android:id="@+id/rightguess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You guessed it right 0 times"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/coin"
+        android:layout_marginBottom="40dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+</RelativeLayout>
+
